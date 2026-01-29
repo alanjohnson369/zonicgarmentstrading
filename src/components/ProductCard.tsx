@@ -8,11 +8,11 @@ interface ProductCardProps {
 function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
-      <div className="relative overflow-hidden bg-gray-100 aspect-square">
+      <div className="relative overflow-hidden bg-white aspect-square border border-gray-100">
         <img
           src={product.image}
           alt={product.title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-4"
         />
         {product.badge && (
           <span className="absolute top-4 left-4 bg-[#16a34a] text-white text-xs font-medium px-3 py-1 rounded">

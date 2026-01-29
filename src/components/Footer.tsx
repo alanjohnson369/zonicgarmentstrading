@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   const footerColumns = [
@@ -13,7 +14,7 @@ function Footer() {
     {
       title: 'Customer Service',
       links: [
-        { label: 'Contact Us', href: '#' },
+        { label: 'Contact Us', href: '/contact' },
         { label: 'Shipping Policy', href: '#' },
         { label: 'Returns', href: '#' },
       ],
@@ -21,9 +22,9 @@ function Footer() {
     {
       title: 'B2B Services',
       links: [
-        { label: 'Bulk Orders', href: '#' },
-        { label: 'Custom Uniforms', href: '#' },
-        { label: 'Corporate Enquiries', href: '#' },
+        { label: 'Bulk Orders', href: '/b2b-services' },
+        { label: 'Custom Uniforms', href: '/b2b-services' },
+        { label: 'Corporate Enquiries', href: '/contact' },
       ],
     },
   ];
@@ -44,12 +45,21 @@ function Footer() {
               <ul className="space-y-2">
                 {column.links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-gray-300 hover:text-[#16a34a] transition-colors"
-                    >
-                      {link.label}
-                    </a>
+                    {link.href.startsWith('#') ? (
+                      <a
+                        href={link.href}
+                        className="text-gray-300 hover:text-[#16a34a] transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.href}
+                        className="text-gray-300 hover:text-[#16a34a] transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -77,7 +87,7 @@ function Footer() {
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center">
-          <p className="text-gray-400">© 2026 Sonic Garments Trading. All rights reserved.</p>
+          <p className="text-gray-400">© 2026 Just Needles. All rights reserved.</p>
         </div>
       </div>
     </footer>
