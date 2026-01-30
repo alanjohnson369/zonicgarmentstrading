@@ -33,8 +33,8 @@ function Header() {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-serif italic">
-            Just Needles
+          <Link to="/" className="text-2xl font-serif italic hover:text-[#16a34a] transition-colors duration-300">
+            Zonic Garments
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-8">

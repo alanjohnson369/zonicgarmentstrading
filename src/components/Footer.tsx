@@ -87,7 +87,7 @@ function Footer() {
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center">
-          <p className="text-gray-400">© 2026 Just Needles. All rights reserved.</p>
+          <p className="text-gray-400">© 2026 Zonic Garments Trading. All rights reserved.</p>
         </div>
       </div>
     </footer>

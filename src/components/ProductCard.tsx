@@ -7,24 +7,24 @@ interface ProductCardProps {
 
 function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+    <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
       <div className="relative overflow-hidden bg-white aspect-square border border-gray-100">
         <img
           src={product.image}
           alt={product.title}
-          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-4"
+          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 p-4"
         />
         {product.badge && (
-          <span className="absolute top-4 left-4 bg-[#16a34a] text-white text-xs font-medium px-3 py-1 rounded">
+          <span className="absolute top-4 left-4 bg-[#16a34a] text-white text-xs font-medium px-3 py-1 rounded animate-scale-in">
             {product.badge}
           </span>
         )}
-        <button className="absolute bottom-4 right-4 bg-white p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#16a34a] hover:text-white">
+        <button className="absolute bottom-4 right-4 bg-white p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-300 hover:bg-[#16a34a] hover:text-white">
           <ShoppingCart size={20} />
         </button>
       </div>
       <div className="p-4">
-        <h3 className="text-sm font-medium text-[#111827] mb-2 line-clamp-2 group-hover:text-[#16a34a] transition-colors">
+        <h3 className="text-sm font-medium text-[#111827] mb-2 line-clamp-2 group-hover:text-[#16a34a] transition-colors duration-300">
           {product.title}
         </h3>
         <div className="flex items-center gap-2">

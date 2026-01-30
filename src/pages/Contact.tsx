@@ -65,7 +65,8 @@ function Contact() {
     <div className="bg-white">
       <div className="bg-[#111827] text-white py-16">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold mb-2">CONTACT</h1>
+          <h1 className="text-4xl font-bold mb-2 animate-fade-in">CONTACT</h1>
+          <p className="text-gray-300 animate-fade-in animation-delay-100">We're here to help and answer any question you might have</p>
         </div>
       </div>
 

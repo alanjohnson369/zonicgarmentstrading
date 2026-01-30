@@ -83,9 +83,9 @@ function Shop() {
     <div className="bg-white">
       <div className="bg-[#111827] text-white py-16">
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl font-bold text-center">PRODUCTS</h1>
-          <div className="flex items-center justify-center gap-2 mt-4 text-sm">
-            <a href="/" className="hover:text-[#16a34a] transition-colors">Home</a>
+          <h1 className="text-4xl font-bold text-center animate-fade-in">PRODUCTS</h1>
+          <div className="flex items-center justify-center gap-2 mt-4 text-sm animate-fade-in animation-delay-100">
+            <a href="/" className="hover:text-[#16a34a] transition-colors hover:scale-110 duration-300">Home</a>
             <span>/</span>
             <span>Products</span>
           </div>

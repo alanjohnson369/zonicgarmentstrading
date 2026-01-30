@@ -73,15 +73,15 @@ function SpecialDeals() {
     <div className="bg-white">
       <div className="bg-[#111827] text-white py-16">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-sm uppercase tracking-wide mb-2">WELCOME TO JUST NEEDLES</p>
-          <h1 className="text-4xl font-bold">SPECIAL DEALS</h1>
+          <p className="text-sm uppercase tracking-wide mb-2 animate-fade-in">WELCOME TO ZONIC GARMENTS</p>
+          <h1 className="text-4xl font-bold animate-fade-in animation-delay-100">SPECIAL DEALS</h1>
         </div>
       </div>
 
       <div className="bg-[#16a34a] text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-2">Limited Time Offers on Premium Uniforms</h2>
-          <p className="text-lg opacity-90">Up to 60% OFF on selected items</p>
+          <h2 className="text-3xl font-bold mb-2 animate-fade-in">Limited Time Offers on Premium Uniforms</h2>
+          <p className="text-lg opacity-90 animate-fade-in animation-delay-100">Up to 60% OFF on selected items</p>
         </div>
       </div>
 
